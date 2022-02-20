@@ -3,6 +3,7 @@ import { Card, CardHeader, CardContent, Typography, Grid, Divider } from '@mui/m
 
 import useStyles from './styles.js';
 import Form from './Form/Form.jsx';
+import List from './List/List.jsx';
 
 const Main = () => {
     const classes = useStyles
@@ -20,7 +21,7 @@ const Main = () => {
             <CardContent className={classes.CardContent}>
                 <Grid container spacing={2}>
                     <Grid item xs={12}>
-                        {/* <List /> */}
+                        <List />
                     </Grid>
                 </Grid>
             </CardContent>
