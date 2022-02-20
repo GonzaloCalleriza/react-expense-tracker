@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { List as MUIList, ListItem, ListItemAvatar, ListItemText, Avatar, ListItemSecondaryAction, IconButton, Slide} from '@mui/material';
 import { Delete, MoneyOff } from '@mui/icons-material';
+
+import { ExpenseTrackerContext } from '../../../context/context.js';
 
 import useStyles from './styles.js'
 
 const List = () => {
+
+    const { deleteTransaction } = useContext(ExpenseTrackerContext);
+
     const classes = useStyles;
 
     const transactions = [
